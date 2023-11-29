@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --global-color-purple: #551A8B;
+    --global-color-red: #ff4747;
+    --global-color-lightgrey: #F3F3F3;
+    --global-color-cyan: #6EB0D6;
+    --global-color-green: #07F468;
+    --global-color-grey: #EAEAEA;
+    --global-color-white: #FFF;
+    --global-color-black: #161616;
+    --global-font-style:  "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
+}   
+
+/* .btn-ultimi-giochi{
+    background-color: var(--global-color-white);
+    color: var(--global-color-black);
+    border-radius:5px ;
+    padding: 12px 24px;
+    height: 51px;
+    text-align: center;
+
+} */
+
