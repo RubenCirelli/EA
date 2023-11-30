@@ -25,3 +25,9 @@
 .global-link:hover {
   color: var(--global-color-red);
 }
+
+@media screen and (max-width: 1024px) {
+  .global-link {
+    font-size: 16px;
+  }
+}
