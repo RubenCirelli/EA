@@ -1,27 +1,37 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-:root{
-    --global-color-purple: #551A8B;
-    --global-color-red: #ff4747;
-    --global-color-lightgrey: #F3F3F3;
-    --global-color-cyan: #6EB0D6;
-    --global-color-green: #07F468;
-    --global-color-grey: #EAEAEA;
-    --global-color-white: #FFF;
-    --global-color-black: #161616;
-    --global-font-style:  "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial", sans-serif;
-}   
+:root {
+  --global-color-purple: #551a8b;
+  --global-color-red: #ff4747;
+  --global-color-lightgrey: #f3f3f3;
+  --global-color-cyan: #6eb0d6;
+  --global-color-green: #07f468;
+  --global-color-grey: #eaeaea;
+  --global-color-white: #fff;
+  --global-color-black: #161616;
+  --global-font-style: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
+    sans-serif;
+}
 
-/* .btn-ultimi-giochi{
-    background-color: var(--global-color-white);
-    color: var(--global-color-black);
-    border-radius:5px ;
-    padding: 12px 24px;
-    height: 51px;
-    text-align: center;
+.global-button {
+  height: 51px;
+  width: 150px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-} */
+.global-button:hover {
+  transform: scale(1.1); /* this will enlarge the button when hovered */
+}
 
+.global-button-round {
+  border: none;
+  border-radius: 50px;
+}
