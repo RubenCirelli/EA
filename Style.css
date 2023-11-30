@@ -17,8 +17,8 @@
 }
 
 .global-button {
-  height: 51px;
-  width: 150px;
+  height: 60px;
+  width: 160px;
   border: 2px solid;
   border-radius: 4px;
   font-size: 18px;
@@ -34,4 +34,11 @@
 .global-button-round {
   border: none;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 1456) {
+  .global-button {
+    height: 51px;
+    width: 136px;
+  }
 }
