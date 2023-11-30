@@ -12,7 +12,7 @@
   --global-color-grey: #eaeaea;
   --global-color-white: #fff;
   --global-color-black: #161616;
-  --global-font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
+  --global-font-style: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
     sans-serif;
 }
 .global-link {
@@ -29,5 +29,32 @@
 @media screen and (max-width: 1024px) {
   .global-link {
     font-size: 16px;
+  }
+}
+
+.global-button {
+  height: 60px;
+  width: 160px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.global-button:hover {
+  transform: scale(1.1); /* this will enlarge the button when hovered */
+}
+
+.global-button-round {
+  border: none;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1456) {
+  .global-button {
+    height: 51px;
+    width: 136px;
   }
 }
