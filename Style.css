@@ -12,7 +12,7 @@
   --global-color-grey: #eaeaea;
   --global-color-white: #fff;
   --global-color-black: #161616;
-  --global-font-style: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
+  --global-font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
     sans-serif;
 }
 .global-link {
@@ -34,10 +34,11 @@
 
 .global-button {
   height: 60px;
-  width: 160px;
+  width: 165px;
   border: 2px solid;
   border-radius: 4px;
   font-size: 18px;
+  font-family: var(--global-font-family);
   padding: 12px 24px;
   cursor: pointer;
   transition: 0.3s;
@@ -57,4 +58,59 @@
     height: 51px;
     width: 136px;
   }
+}
+
+.global-news-card {
+  width: 33.33%;
+  height: 50%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  .global-news-card-img {
+    width: 100%;
+    height: 30%;
+    opacity: 1;
+  }
+
+  .global-news-card-content {
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    font-family: var(--global-font-family);
+    color: var(--global-color-black);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    .content-top-part {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      font-size: 14px;
+
+      .ea-logo-red {
+        color: var(--global-color-red);
+      }
+    }
+
+    .content-title {
+      margin-top: 6px;
+      font-size: 24px;
+    }
+
+    .content-body {
+      margin-top: 6px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.global-news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
