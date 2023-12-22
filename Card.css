@@ -114,3 +114,32 @@
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 1rem;
+}
