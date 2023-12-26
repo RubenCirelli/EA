@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --global-color-purple: #551a8b;
+  --global-color-red: #ff4747;
+  --global-color-lightgrey: #f3f3f3;
+  --global-color-cyan: #6eb0d6;
+  --global-color-green: #07f468;
+  --global-color-grey: #eaeaea;
+  --global-color-white: #fff;
+  --global-color-black: #161616;
+}
+
+@font-face {
+  font-family: EaFont;
+  src: url(./Files/ElectronicArtsText.ttf);
+}
+.container-el {
+  font-family: EaFont;
+}
+
+.blackNavbar {
+  background-color: #161616;
+  width: 100%;
+  height: 40px;
+  color: var(--global-color-grey);
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  }
+
+.profile {
+  margin-right: 40px;
+  height: 15px;
+  width: 15px;
+}
+
+.answer {
+  margin-right: 40px;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 4px;
+}
+
+.ea {
+  margin-right: 30px;
+  margin-top: 6px;
+  height: 23px;
+  width: 40px;
+
+}
+
+.submenu1 {
+  display: none;
+}
+
+.submenu2 {
+  display: none;
+}
+
+.submenu3 {
+  display: none;
+}
+
+.submenu4 {
+  display: none;
+}
+
+.submenu5 {
+  display: none;
+}
+
+.realNavbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--global-color-grey);
+  align-items: center;
+  color: #161616;
+}
+
+.HamburgerMenu {
+  background-color: var(--global-color-black);
+  width: 4px;
+  height: 4px;
+  margin: 4px;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.menu:hover >*{
+  background-color: var(--global-color-red);
+  width: 6px;
+  height: 6px;
+  margin: 5px;
+  border-radius: 6px;
+  margin-left: 20px;
+  transition: 400ms;
+}
+
+.electronicArts {
+  margin-left: 30px;
+  width: 200px;
+}
+
+.giochi {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.aste{
+  display: flex;
+}
+
+.asta1{
+  background-color: var(--global-color-black);
+  width: 8px;
+  height: 2px;
+  transform:rotate(45deg)
+}
+.asta2{
+  background-color: var(--global-color-black);
+  width: 8px;
+  height: 2px;
+  margin-left:-2px;
+  transform:rotate(-45deg)
+}
+
+
+.altreEsperienze {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.informazioni {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.impegni {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.risorse {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.giochi:hover {
+  color: var(--global-color-red);
+}
+
+.giochi:hover .aste{
+  transform:rotate(180deg)
+}
+
+.giochi:hover .submenu1 {
+  position: absolute;
+  background-color: var(--global-color-lightgrey);
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 400px;
+  padding: 2rem;
+  height: 320px;
+}
+.submenu1-subclass1 > * {
+  margin:0.7rem;
+}
+
+.submenu1-subclass2 {
+  margin-left: 1rem;
+}
+.submenu1-subclass2 >* {
+  margin: 0.7rem
+}
+.submenu2-subclass2 > * + * {
+  margin:0.7rem;
+}
+
+.altreEsperienze:hover {
+  color: var(--global-color-red);
+}
+.altreEsperienze:hover .aste{
+  transform:rotate(180deg)
+}
+
+
+.altreEsperienze:hover .submenu2 {
+  position: absolute;
+  background-color: var(--global-color-lightgrey);
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 280px;
+  padding: 2rem;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu2-subclass1 > *{
+  margin: 0.7rem
+}
+
+.informazioni:hover {
+  color: var(--global-color-red);
+}
+
+.informazioni:hover .aste{
+  transform:rotate(180deg)
+}
+.submenu3-subclass1 > *{
+  margin:0.7rem
+}
+
+.informazioni:hover .submenu3 {
+  position: absolute;
+  background-color: var(--global-color-lightgrey);
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 330px;
+  padding: 2rem;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.impegni:hover {
+  color: var(--global-color-red);
+}
+
+.impegni:hover .aste{
+  transform:rotate(180deg)
+}
+
+.impegni:hover .submenu4 {
+  position: absolute;
+  background-color: var(--global-color-lightgrey);
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 310px;
+  padding: 2rem;
+  height: 230px;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu4-subclass1 > *{
+margin: 0.7rem;
+}
+
+.risorse:hover {
+  color: var(--global-color-red);
+}
+
+.risorse:hover .aste{
+  transform:rotate(180deg);
+}
+
+.risorse:hover .submenu5 {
+  position: absolute;
+  background-color: var(--global-color-lightgrey);
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 310px;
+  padding: 2rem;
+  height: 230px;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu5-subclass1 > *{
+margin:0.7rem
+}
+
