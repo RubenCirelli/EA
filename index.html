@@ -22,25 +22,6 @@
       </div>
     </div>
     
-    <div class="sidebar">
-        <div class="sidebarHeader">
-          <h3 class="tuttiIGiochi">Tutti i giochi</h3>
-          <span>X</span>
-        </div>
-        <div class="bigCard"></div>
-        <div class="smallcardContainer">
-          <div class="smallcard"></div>
-          <div class="smallcard"></div>
-        </div>
-        <div class="smallcardContainer">
-          <div class="smallcard"></div>
-          <div class="smallcard"></div>
-        </div>
-        <div class="smallcardContainer">
-          <div class="smallcard"></div>
-          <div class="smallcard"></div>
-        </div>
-      </div>
     <div class="realNavbar">
       <div class="menu">
         <div class="HamburgerMenu"></div>
@@ -143,9 +124,53 @@
         </div>
       </div>
     </div>
+    <div class="sidebar close">
+        <div class="sidebarHeader">
+          <h3 class="tuttiIGiochi">Tutti i giochi</h3>
+          <span class ="closeit">X</span>
+        </div>
+        <div class="bigCard">
+        <img class ="EALogoBig"src="./Files/EA play-01.svg" alt="">
+        </div>
+        <div class="smallcardContainer">
+          <div class="smallcard1">
+            <img class="smallLogo" src="./Files/fifa23-01.svg" alt="">
+          </div>
+          <div class="smallcard2">
+            <img class="smallLogo" src="./Files/f1-01.svg" alt="">
+          </div>
+        </div>
+        <div class="smallcardContainer">
+          <div class="smallcard3">
+            <img class="smallLogo" src="./Files/madden-01.svg" alt="">
+          </div>
+          <div class="smallcard4">
+            <img class="smallLogo" src="./Files/apex-01.svg" alt="">
+          </div>
+        </div>
+        <div class="smallcardContainer">
+          <div class="smallcard5">
+            <img class="smallLogo" src="./Files/Battlefield-01.svg" alt="">
+          </div>
+          <div class="smallcard6">
+            <img class="smallLogo" src="./Files/The sims-01.svg" alt="">
+          </div>
+        </div>
+      </div>
   </div>
+  
   <script>
-    // usa position fixed
+    const sidebar = document.querySelector(".sidebar")
+    const toggle = document.querySelector(".menu")
+    const closeIt = document.querySelector(".closeit")
+    toggle.addEventListener("click", () =>{
+      sidebar.classList.toggle("close")
+    })
+
+    closeIt.addEventListener("click", () =>{
+      sidebar.classList.toggle("close")
+    })
+
   </script>
 </body>
 
