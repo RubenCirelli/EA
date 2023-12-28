@@ -21,7 +21,7 @@
         <img src="./Files/EA-01.svg" alt="">
       </div>
     </div>
-    
+
     <div class="realNavbar">
       <div class="menu">
         <div class="HamburgerMenu"></div>
@@ -31,7 +31,9 @@
       <div class="electronicArts">
         <img src="./Files/ElectronicArts-01.svg" alt="">
       </div>
+
       <div class="giochi">Giochi
+        <div class="prova">
         <div class="submenu1">
           <div class="submenu1-subclass1">
             <h3>ESPLORA I GIOCHI</h3>
@@ -54,6 +56,8 @@
             <p>Dispositivi Mobili</p>
           </div>
         </div>
+      </div>
+
         <div class="aste">
           <div class="asta1"></div>
           <div class="asta2"></div>
@@ -124,52 +128,68 @@
         </div>
       </div>
     </div>
-    <div class="sidebar close">
-        <div class="sidebarHeader">
-          <h3 class="tuttiIGiochi">Tutti i giochi</h3>
-          <span class ="closeit">X</span>
-        </div>
-        <div class="bigCard">
-        <img class ="EALogoBig"src="./Files/EA play-01.svg" alt="">
-        </div>
-        <div class="smallcardContainer">
-          <div class="smallcard1">
-            <img class="smallLogo" src="./Files/fifa23-01.svg" alt="">
+    <div class="section">
+      <div class="blackRectangle">
+        <div class="sidebar close">
+          <div class="sidebarHeader">
+            <h3 class="tuttiIGiochi">Tutti i giochi</h3>
+            <span class="closeit">X</span>
           </div>
-          <div class="smallcard2">
-            <img class="smallLogo" src="./Files/f1-01.svg" alt="">
+          <div class="bigCard">
+            <img class="EALogoBig" src="./Files/EA play-01.svg" alt="">
           </div>
-        </div>
-        <div class="smallcardContainer">
-          <div class="smallcard3">
-            <img class="smallLogo" src="./Files/madden-01.svg" alt="">
+          <div class="smallcardContainer">
+            <div class="smallcard1">
+              <img class="smallLogo" src="./Files/fifa23-01.svg" alt="">
+            </div>
+            <div class="smallcard2">
+              <img class="smallLogo" src="./Files/f1-01.svg" alt="">
+            </div>
           </div>
-          <div class="smallcard4">
-            <img class="smallLogo" src="./Files/apex-01.svg" alt="">
+          <div class="smallcardContainer">
+            <div class="smallcard3">
+              <img class="smallLogo" src="./Files/madden-01.svg" alt="">
+            </div>
+            <div class="smallcard4">
+              <img class="smallLogo" src="./Files/apex-01.svg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="smallcardContainer">
-          <div class="smallcard5">
-            <img class="smallLogo" src="./Files/Battlefield-01.svg" alt="">
-          </div>
-          <div class="smallcard6">
-            <img class="smallLogo" src="./Files/The sims-01.svg" alt="">
+          <div class="smallcardContainer">
+            <div class="smallcard5">
+              <img class="smallLogo" src="./Files/Battlefield-01.svg" alt="">
+            </div>
+            <div class="smallcard6">
+              <img class="smallLogo" src="./Files/The sims-01.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
-  
+
   <script>
     const sidebar = document.querySelector(".sidebar")
     const toggle = document.querySelector(".menu")
     const closeIt = document.querySelector(".closeit")
-    toggle.addEventListener("click", () =>{
+
+    toggle.addEventListener("click", () => {
       sidebar.classList.toggle("close")
     })
 
-    closeIt.addEventListener("click", () =>{
+    closeIt.addEventListener("click", () => {
       sidebar.classList.toggle("close")
     })
+
+    const blackscreen = document.querySelector(".blackRectangle")
+
+    toggle.addEventListener("click", () => {
+      blackscreen.classList.toggle("black")
+    })
+
+    closeIt.addEventListener("click", () => {
+      blackscreen.classList.toggle("black")
+    })
+
 
   </script>
 </body>

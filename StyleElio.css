@@ -21,17 +21,34 @@
   src: url(./Files/ElectronicArtsText.ttf);
 }
 
+
 .container-el {
   font-family: EaFont;
+  width: 100%;
+  height: 100%;
+}
+
+.container-el.black {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.625);
+  position: absolute;
+  z-index: 1;
+  display: block;
 }
 
 .sidebar {
-  background-color: var(--global-color-grey);
+  background-color: var(--global-color-lightgrey);
   height: 100%;
   width: 28%;
   justify-content: center;
   align-items: center;
   transform: translateX(0);
+  position: fixed;
+  overflow-y: scroll;
+  top: 40px;
+  bottom: 0;
+  transition: 500ms;
 }
 
 .sidebar.close {
@@ -54,7 +71,7 @@
   cursor: pointer;
 }
 
-.closeit:hover{
+.closeit:hover {
   color: var(--global-color-red);
 }
 
@@ -303,8 +320,9 @@
   cursor: pointer;
 }
 
+
 .giochi {
-  margin-left: 30px;
+  margin-left: 40px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -318,14 +336,14 @@
 .asta1 {
   background-color: var(--global-color-black);
   width: 8px;
-  height: 2px;
+  height: 1px;
   transform: rotate(45deg)
 }
 
 .asta2 {
   background-color: var(--global-color-black);
   width: 8px;
-  height: 2px;
+  height: 1px;
   margin-left: -3px;
   transform: rotate(-45deg)
 }
@@ -413,8 +431,6 @@
   background-color: var(--global-color-red);
 }
 
-
-
 .giochi:hover .submenu1 {
   position: absolute;
   background-color: var(--global-color-lightgrey);
@@ -423,6 +439,17 @@
   margin-top: 400px;
   padding: 2rem;
   height: 320px;
+  border-radius: 5px;
+}
+
+.giochi:hover .prova{
+  display: flex;
+  position: fixed;
+  /* color: var(--global-color-black);
+  margin-top: 0px;
+  height: 30px;
+  width: 30px;
+  background-color: var(--global-color-red); */
 }
 
 .submenu1-subclass1>* {
@@ -455,6 +482,7 @@
   height: 200px;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .submenu2-subclass1>* {
@@ -480,6 +508,7 @@
   height: 250px;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .impegni:hover {
@@ -497,6 +526,7 @@
   height: 230px;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .submenu4-subclass1>* {
@@ -518,8 +548,26 @@
   height: 230px;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .submenu5-subclass1>* {
   margin: 0.7rem
-} 
+}
+
+.section {
+  display: flex;
+  background-image: url("./Files/jumbo.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 560px;
+}
+
+.blackRectangle.black {
+  background-color: #161616c5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  transition: 400ms;
+}
