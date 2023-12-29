@@ -202,6 +202,28 @@
       <button class="global-button">Più dettagli</button>
     </div>
 
+    <div id="container">
+
+    </div>
+    <script>
+      const data=[
+        {
+          title: "titolo",
+
+        }
+      ];
+
+      function onRender(){
+        const container=document.getElementById("container")
+        data.forEach((el)=> {
+          const tagTitle=document.createElement("div")
+          tagTitle.innerHTML=el.title
+          container.appendChild(tagTitle)
+        })
+      }
+
+      onRender()
+    </script>
 
   </body>
 </html>
