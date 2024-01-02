@@ -304,6 +304,14 @@
   cursor: pointer;
 }
 
+.sidebarmenu {
+  display: none;
+}
+
+.menuQuery {
+  display: none;
+}
+
 .menu:hover>* {
   background-color: var(--global-color-red);
   width: 6px;
@@ -386,15 +394,16 @@
   background-color: var(--global-color-red);
 }
 
+.altreEsperienze:hover .asta1 {
+  transform: rotate(135deg);
+  background-color: var(--global-color-red);
+}
+
 .altreEsperienze:hover .asta2 {
   transform: rotate(45deg);
   background-color: var(--global-color-red);
 }
 
-.altreEsperienze:hover .asta1 {
-  transform: rotate(135deg);
-  background-color: var(--global-color-red);
-}
 
 .informazioni:hover .asta2 {
   transform: rotate(45deg);
@@ -432,57 +441,99 @@
 }
 
 .giochi:hover .submenu1 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
   position: absolute;
-  background-color: var(--global-color-lightgrey);
+  background-color: #eaeaeaef;
   display: flex;
   color: var(--global-color-black);
-  margin-top: 400px;
+  margin-top: 50px;
   padding: 2rem;
-  height: 320px;
+  height: 370px;
+  width: 420px;
   border-radius: 5px;
+  left: -150px;
 }
 
-.giochi:hover .prova{
-  display: flex;
-  position: fixed;
-  /* color: var(--global-color-black);
-  margin-top: 0px;
-  height: 30px;
-  width: 30px;
-  background-color: var(--global-color-red); */
-}
 
-.submenu1-subclass1>* {
+.submenu1-subclass>* {
   margin: 0.7rem;
 }
 
-.submenu1-subclass2 {
-  margin-left: 1rem;
+@keyframes dropDown {
+  from {
+    transform: scale(1, 0);
+
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
 }
 
-.submenu1-subclass2>* {
-  margin: 0.7rem
+.prova p:hover {
+  color: var(--global-color-red);
 }
 
-.submenu2-subclass2>*+* {
-  margin: 0.7rem;
+.giochi:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
 }
+
+.altreEsperienze:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.informazioni:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.impegni:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.risorse:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+
+
 
 .altreEsperienze:hover {
   color: var(--global-color-red);
 }
 
 .altreEsperienze:hover .submenu2 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
   position: absolute;
-  background-color: var(--global-color-lightgrey);
+  background-color: #eaeaeaef;
   display: flex;
   color: var(--global-color-black);
-  margin-top: 280px;
+  margin-top: 50px;
   padding: 2rem;
   height: 200px;
+  width: 300px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  left: -150px;
 }
 
 .submenu2-subclass1>* {
@@ -499,16 +550,21 @@
 }
 
 .informazioni:hover .submenu3 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
   position: absolute;
-  background-color: var(--global-color-lightgrey);
+  background-color: #eaeaeaef;
   display: flex;
   color: var(--global-color-black);
-  margin-top: 330px;
+  margin-top: 50px;
   padding: 2rem;
   height: 250px;
+  width: 250px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  left: -150px;
 }
 
 .impegni:hover {
@@ -517,16 +573,21 @@
 
 
 .impegni:hover .submenu4 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
   position: absolute;
-  background-color: var(--global-color-lightgrey);
+  background-color: #eaeaeaef;
   display: flex;
   color: var(--global-color-black);
-  margin-top: 310px;
+  margin-top: 50px;
   padding: 2rem;
   height: 230px;
+  width: 250px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  left: -150px;
 }
 
 .submenu4-subclass1>* {
@@ -539,17 +600,23 @@
 
 
 .risorse:hover .submenu5 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
   position: absolute;
-  background-color: var(--global-color-lightgrey);
+  background-color: #eaeaeaef;
   display: flex;
   color: var(--global-color-black);
-  margin-top: 310px;
+  margin-top: 50px;
   padding: 2rem;
   height: 230px;
+  width: 200px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  left: -100px;
 }
+
 
 .submenu5-subclass1>* {
   margin: 0.7rem
@@ -570,4 +637,197 @@
   position: absolute;
   top: 40px;
   transition: 400ms;
+}
+
+@media screen and (max-width: 1032px) {
+  .giochi {
+    display: none;
+  }
+
+  .altreEsperienze {
+    display: none;
+  }
+
+  .informazioni {
+    display: none;
+  }
+
+  .impegni {
+    display: none;
+  }
+
+  .risorse {
+    display: none;
+  }
+
+  .aste {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuQuery {
+    display: block;
+    cursor: pointer;
+  }
+
+  .HamburgerMenuQuery {
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--global-color-black);
+    margin-left: 10px;
+  }
+
+  .menuQuery:hover>* {
+    background-color: var(--global-color-red);
+  }
+
+  .electronicArts {
+    margin-left: 7px;
+  }
+
+  .sidebarmenu {
+    background-color: var(--global-color-lightgrey);
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    top: 40px;
+    transform: translateX(0);
+    overflow-y: scroll;
+    display: block;
+    transition: 500ms;
+  }
+
+  .sidebarmenu.close {
+    transform: translateX(-100%);
+  }
+
+  .sidebarmenu p {
+    cursor: pointer;
+  }
+
+  .esploraQ {
+    display: none;
+  }
+  
+  .esploraQ.close {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+  }
+
+  .giochiQ {
+    display: none;
+  }
+  
+  .giochiQ.close {
+    display: block;
+    color: var(--global-color-darkgrey);
+  }
+
+  .giochiTIT:focus{
+    color: var(--global-color-red);
+  }
+
+  .piattaformeQ {
+    display: none;
+  }
+  .piattaformeQ.close {
+    display: block;
+  }
+
+  .altroElemento1.close {
+    display: none;
+  }
+
+  .altroElemento1 {
+    display: block;
+  }
+
+  .altroElemento2.close {
+    display: none;
+  }
+
+  .altroElemento2 {
+    display: block;
+  }
+
+  .altroElemento2.close {
+    display: none;
+  }
+
+  .altroElemento3 {
+    display: block;
+  }
+
+  .altroElemento3.close {
+    display: none;
+  }
+
+  .altroElemento4 {
+    display: block;
+  }
+
+  .altroElemento4.close {
+    display: none;
+  }
+
+  .sidebarmenu>* {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .flexdiv {
+    display: flex;
+    border-bottom: var(--global-color-black) solid 1px;
+  }
+
+  .closesidebar {
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .closesidebar:hover {
+    color: var(--global-color-red);
+  }
+
+  .asteQ {
+    display: flex;
+    margin-right: 1rem;
+    position: relative;
+    margin-top: .7rem;
+  }
+
+  .sidebarheaderQ {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexdiv:hover .asta1 {
+    transform: rotate(135deg);
+    background-color: var(--global-color-red);
+  }
+
+  .flexdiv:hover .asta2 {
+    transform: rotate(45deg);
+    background-color: var(--global-color-red);
+  }
+
+  .sidebarheaderQ {
+    background-color: var(--global-color-grey);
+    margin: 0px;
+    padding: 1rem;
+   align-items: center;
+  }
+
+  .flexdivGrey {
+    display: flex;
+    border-bottom: var(--global-color-darkgrey) solid 1px;
+  }
+
+
 }
