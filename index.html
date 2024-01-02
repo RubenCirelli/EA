@@ -161,7 +161,7 @@
           </div>
 
           <div class="giochiQ">
-            <div class="flexdiv">
+            <div class="flexdivGrey">
               <div class="esploraTIT">ESPLORA I GIOCHI</div>
               <div class="piu">+</div>
             </div>
@@ -175,7 +175,7 @@
               <p>Offerte EA app</p>
             </div>
 
-            <div class="flexdiv">
+            <div class="flexdivGrey">
               <div class="piattaformeTIT">PIATTAFORME</div>
               <div class="piu">+</div>
             </div>
@@ -188,7 +188,20 @@
             </div>
           </div>
 
-
+          <div class="flexdiv">
+            <div class="altroElementoTIT2">Altre Esperienze</div>
+            <div class="asteQ">
+              <div class="asta1"></div>
+              <div class="asta2"></div>
+            </div>
+          </div>
+          <div class="altroElemento2 close">
+            <p>EA Play</p>
+            <p>EA app</p>
+            <p>Competizioni videoludiche</p>
+            <p>Diretta di EA play</p>
+            <p>Test di gioco</p>
+          </div>
 
           <div class="flexdiv">
             <div class="altroElementoTIT1">Informazioni</div>
@@ -205,21 +218,6 @@
             <p>EA Partners</p>
             <p>Notizie</p>
             <p>Inside EA</p>
-          </div>
-
-          <div class="flexdiv">
-            <div class="altroElementoTIT2">Altre Esperienze</div>
-            <div class="asteQ">
-              <div class="asta1"></div>
-              <div class="asta2"></div>
-            </div>
-          </div>
-          <div class="altroElemento2 close">
-            <p>EA Play</p>
-            <p>EA app</p>
-            <p>Competizioni videoludiche</p>
-            <p>Diretta di EA play</p>
-            <p>Test di gioco</p>
           </div>
 
           <div class="flexdiv">
@@ -321,30 +319,44 @@
 
     giochiTIT.addEventListener("click", () => {
       giochiQ.classList.toggle("close")
+      const curColour = giochiTIT.style.color;
+      giochiTIT.style.color = curColour === 'red' ? 'black' : 'red';
     })
 
     piattaformeTIT.addEventListener("click", () => {
       piattaformeQ.classList.toggle("close")
+      const curColour = piattaformeTIT.style.color;
+      piattaformeTIT.style.color = curColour === 'red' ? 'grey' : 'red';
     })
 
     esploraTIT.addEventListener("click", () => {
       esploraQ.classList.toggle("close")
+      const curColour = esploraTIT.style.color;
+      esploraTIT.style.color = curColour === 'red' ? 'grey' : 'red';
     })
 
     altroElementoTIT1.addEventListener("click", () => {
       altroElemento1.classList.toggle("close")
+      const curColour = altroElementoTIT1.style.color;
+      altroElementoTIT1.style.color = curColour === 'red' ? 'black' : 'red';
     })
 
     altroElementoTIT2.addEventListener("click", () => {
       altroElemento2.classList.toggle("close")
+      const curColour = altroElementoTIT2.style.color;
+      altroElementoTIT2.style.color = curColour === 'red' ? 'black' : 'red';
     })
 
     altroElementoTIT3.addEventListener("click", () => {
       altroElemento3.classList.toggle("close")
+      const curColour = altroElementoTIT3.style.color;
+      altroElementoTIT3.style.color = curColour === 'red' ? 'black' : 'red';
     })
 
     altroElementoTIT4.addEventListener("click", () => {
       altroElemento4.classList.toggle("close")
+      const curColour = altroElementoTIT4.style.color;
+      altroElementoTIT4.style.color = curColour === 'red' ? 'black' : 'red';
     })
 
     toggle.addEventListener("click", () => {

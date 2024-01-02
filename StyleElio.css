@@ -472,6 +472,7 @@
   }
 }
 
+
 .prova p:hover {
   color: var(--global-color-red);
 }
@@ -699,6 +700,11 @@
     overflow-y: scroll;
     display: block;
     transition: 500ms;
+    min-width: 355.04px;
+  }
+
+  .sidebarmenu > * {
+    margin-left: .7rem;
   }
 
   .sidebarmenu.close {
@@ -707,53 +713,131 @@
 
   .sidebarmenu p {
     cursor: pointer;
+    border-bottom: solid 1px var(--global-color-darkgrey);
+    padding: 1rem;
   }
 
   .esploraQ {
     display: none;
   }
-  
+
   .esploraQ.close {
     transform-origin: top;
     animation-duration: 0.5s;
     animation-name: dropDown;
     display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
   }
 
   .giochiQ {
     display: none;
   }
-  
+
   .giochiQ.close {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
     display: block;
     color: var(--global-color-darkgrey);
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
   }
 
-  .giochiTIT:focus{
+  .giochiTIT:hover {
     color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .esploraTIT:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .piattaformeTIT:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT1:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT2:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT3:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT4:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
   }
 
   .piattaformeQ {
     display: none;
   }
+
   .piattaformeQ.close {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
     display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
   }
 
   .altroElemento1.close {
+
     display: none;
   }
 
   .altroElemento1 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
     display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .altroElemento1:active{
+    color: var(--global-color-red);
+    background-color: #551a8b;
+  }
+
+  .altroElemento1 p {
+    color: var(--global-color-darkgrey);
+  }
+  .altroElemento2 p {
+    color: var(--global-color-darkgrey);
+  }
+  .altroElemento3 p {
+    color: var(--global-color-darkgrey);
+  }
+  .altroElemento4 p {
+    color: var(--global-color-darkgrey);
   }
 
   .altroElemento2.close {
+
     display: none;
   }
 
   .altroElemento2 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
     display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
   }
 
   .altroElemento2.close {
@@ -761,7 +845,12 @@
   }
 
   .altroElemento3 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
     display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
   }
 
   .altroElemento3.close {
@@ -769,21 +858,32 @@
   }
 
   .altroElemento4 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
     display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
   }
 
   .altroElemento4.close {
     display: none;
   }
 
-  .sidebarmenu>* {
-    margin-top: 1rem;
-    margin-left: 1rem;
+  .sidebarmenu p:hover {
+    color: var(--global-color-red);
   }
 
   .flexdiv {
     display: flex;
     border-bottom: var(--global-color-black) solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .flexdiv:hover {
+    color: var(--global-color-red);
   }
 
   .closesidebar {
@@ -821,12 +921,19 @@
     background-color: var(--global-color-grey);
     margin: 0px;
     padding: 1rem;
-   align-items: center;
+    align-items: center;
   }
 
   .flexdivGrey {
     display: flex;
     border-bottom: var(--global-color-darkgrey) solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .flexdivGrey:hover {
+    color: var(--global-color-red);
   }
 
 
