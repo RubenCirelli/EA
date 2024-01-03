@@ -25,9 +25,12 @@ body{
 
 .ultime-novità-tabs-container{
   width: 100%;
+  margin: auto;
   height: 60px;
   border-bottom: 2px solid #DEDEDE;
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
   
 
   .ultime-novità-tabs{
@@ -35,6 +38,11 @@ body{
     width: 100%;
     display: flex; 
     justify-content: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
 
     .tab{
       list-style: none;
@@ -75,8 +83,38 @@ body{
     }
 
   }
+
+  .ultime-novità-tabs::-webkit-scrollbar{
+    display: none
+  }
 }
 
+.ultime-novità-tabs-container svg{
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  color: var(--global-color-black);
+}
+
+.ultime-novità-tabs-container .right-arrow,
+.ultime-novità-tabs-container .left-arrow{
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  display: none;
+  align-items: center;
+}
+
+.ultime-novità-tabs-container .right-arrow{
+  right: 0;
+  justify-content: flex-end;
+}
+
+.ultime-novità-tabs-container .right-arrow.active,
+.ultime-novità-tabs-container .left-arrow.active{
+  display: flex;
+}
 #need-for-speed{
   border-right: none;
 }
