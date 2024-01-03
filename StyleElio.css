@@ -289,7 +289,7 @@
   display: flex;
   width: 100%;
   height: 60px;
-  background-color: var(--global-color-grey);
+  background-color: var(--global-color-white);
   align-items: center;
   color: #161616;
 }
@@ -703,7 +703,7 @@
     min-width: 355.04px;
   }
 
-  .sidebarmenu > * {
+  .sidebarmenu>* {
     margin-left: .7rem;
   }
 
@@ -717,6 +717,12 @@
     padding: 1rem;
   }
 
+  .sidebarmenu p:last-child {
+    cursor: pointer;
+    border-bottom: none;
+    padding: 1rem;
+  }
+
   .esploraQ {
     display: none;
   }
@@ -726,8 +732,27 @@
     animation-duration: 0.5s;
     animation-name: dropDown;
     display: block;
-    border-top: solid 1px var(--global-color-red);
     border-bottom: solid 1px var(--global-color-red);
+    transition: 500ms;
+  }
+
+  .esploraQ.open {
+    color: var(--global-color-black);
+    border-bottom: solid 1px var(--global-color-black)
+  }
+
+  .esploraQ.open p:last-child {
+    color: var(--global-color-black);
+    border-bottom: none
+  }
+
+  .esploraQ.open p:last-child:hover {
+    color: var(--global-color-red);
+  }
+
+  .piattaformeQ.open {
+    color: var(--global-color-black);
+    border-bottom: none
   }
 
   .giochiQ {
@@ -742,6 +767,10 @@
     color: var(--global-color-darkgrey);
     border-top: solid 1px var(--global-color-red);
     border-bottom: solid 1px var(--global-color-red);
+  }
+
+  .giochiTIT.open {
+    border-bottom: none;
   }
 
   .giochiTIT:hover {
@@ -789,7 +818,6 @@
     animation-name: dropDown;
     display: block;
     border-top: solid 1px var(--global-color-red);
-    border-bottom: solid 1px var(--global-color-red);
   }
 
   .altroElemento1.close {
@@ -808,20 +836,19 @@
     justify-content: center;
   }
 
-  .altroElemento1:active{
-    color: var(--global-color-red);
-    background-color: #551a8b;
-  }
 
   .altroElemento1 p {
     color: var(--global-color-darkgrey);
   }
+
   .altroElemento2 p {
     color: var(--global-color-darkgrey);
   }
+
   .altroElemento3 p {
     color: var(--global-color-darkgrey);
   }
+
   .altroElemento4 p {
     color: var(--global-color-darkgrey);
   }
@@ -882,6 +909,10 @@
     padding: 1rem;
   }
 
+  .flexdiv.open {
+    border-bottom: none;
+  }
+
   .flexdiv:hover {
     color: var(--global-color-red);
   }
@@ -907,12 +938,21 @@
     justify-content: space-between;
   }
 
-  .flexdiv:hover .asta1 {
+  .flexdiv:hover .asta1Q {
     transform: rotate(135deg);
     background-color: var(--global-color-red);
   }
 
-  .flexdiv:hover .asta2 {
+  .flexdiv:hover .asta2Q {
+    transform: rotate(45deg);
+    background-color: var(--global-color-red);
+  }
+
+  .asta1Q.open{
+    transform: rotate(135deg);
+    background-color: var(--global-color-red);
+  }
+  .asta2Q.open{
     transform: rotate(45deg);
     background-color: var(--global-color-red);
   }
@@ -932,9 +972,41 @@
     padding: 1rem;
   }
 
+  #flexdivGrey2 {
+    border-bottom: none;
+  }
+
+  .flexdiv:last-child {
+    border-bottom: none;
+  }
+
+  .flexdivGrey.open {
+    border-bottom: none
+  }
+
   .flexdivGrey:hover {
     color: var(--global-color-red);
   }
 
+  .asta1Q {
+    background-color: var(--global-color-black);
+    width: 8px;
+    height: 1px;
+    transform: rotate(45deg)
+  }
+  
+  .asta2Q {
+    background-color: var(--global-color-black);
+    width: 8px;
+    height: 1px;
+    margin-left: -3px;
+    transform: rotate(-45deg)
+  }
+
+  @media screen and (max-width: 768px){
+    .electronicArts{
+      width: 110px;
+    }
+  }
 
 }
