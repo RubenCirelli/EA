@@ -144,6 +144,16 @@
     </div>
     <div class="section">
       <div class="blackRectangle">
+        <div class="jumbopng">
+          <img class="" src="./Files/tales of kenzera.png" alt="">
+
+          <h7 class ="subtitle">Scatena la danza dello sciamano. Libera lo spirito di tuo padre. L'avventura inizia il 23 aprile 2024.
+          </h7>
+          <div class="buttondiv">
+            <div class="button" id="scopri">Scopri di più</div>
+            <div class="button" id="preordina">Preordina ora</div>
+          </div>
+        </div>
         <div class="sidebarmenu close">
           <div class="sidebarheaderQ">
             <div class="electronicArts">
@@ -155,8 +165,8 @@
           <div class="flexdiv" id="flexdiv1">
             <div class="giochiTIT">Giochi</div>
             <div class="asteQ">
-              <div class="asta1"></div>
-              <div class="asta2"></div>
+              <div class="asta1Q" id="ast1"></div>
+              <div class="asta2Q" id="ast2"></div>
             </div>
           </div>
 
@@ -191,8 +201,8 @@
           <div class="flexdiv" id="flexdiv2">
             <div class="altroElementoTIT2">Altre Esperienze</div>
             <div class="asteQ">
-              <div class="asta1"></div>
-              <div class="asta2"></div>
+              <div class="asta1Q" id="ast5"></div>
+              <div class="asta2Q" id="ast6"></div>
             </div>
           </div>
           <div class="altroElemento2 close">
@@ -206,8 +216,8 @@
           <div class="flexdiv" id="flexdiv3">
             <div class="altroElementoTIT1">Informazioni</div>
             <div class="asteQ">
-              <div class="asta1"></div>
-              <div class="asta2"></div>
+              <div class="asta1Q" id="ast3"></div>
+              <div class="asta2Q" id="ast4"></div>
             </div>
           </div>
           <div class="altroElemento1 close">
@@ -223,8 +233,8 @@
           <div class="flexdiv" id="flexdiv4">
             <div class="altroElementoTIT3">Impegni</div>
             <div class="asteQ">
-              <div class="asta1"></div>
-              <div class="asta2"></div>
+              <div class="asta1Q" id="ast7"></div>
+              <div class="asta2Q" id="ast8"></div>
             </div>
           </div>
           <div class="altroElemento3 close">
@@ -239,8 +249,8 @@
           <div class="flexdiv" id="flexdiv5">
             <div class="altroElementoTIT4">Risorse</div>
             <div class="asteQ">
-              <div class="asta1"></div>
-              <div class="asta2"></div>
+              <div class="asta1Q" id="ast9"></div>
+              <div class="asta2Q" id="ast10"></div>
             </div>
           </div>
           <div class="altroElemento4 close">
@@ -251,9 +261,6 @@
             <p>Stampa</p>
             <p>Investitori</p>
           </div>
-
-
-
         </div>
       </div>
       <div class="sidebar close">
@@ -320,7 +327,16 @@
     const flexdiv3 = document.querySelector("#flexdiv3")
     const flexdiv4 = document.querySelector("#flexdiv4")
     const flexdiv5 = document.querySelector("#flexdiv5")
-    const aste = document.querySelector(".asteQ")
+    const asta1Q = document.querySelector("#ast1")
+    const asta2Q = document.querySelector("#ast2")
+    const asta3Q = document.querySelector("#ast3")
+    const asta4Q = document.querySelector("#ast4")
+    const asta5Q = document.querySelector("#ast5")
+    const asta6Q = document.querySelector("#ast6")
+    const asta7Q = document.querySelector("#ast7")
+    const asta8Q = document.querySelector("#ast8")
+    const asta9Q = document.querySelector("#ast9")
+    const asta10Q = document.querySelector("#ast10")
 
 
     giochiTIT.addEventListener("click", () => {
@@ -328,7 +344,8 @@
       const curColour = giochiTIT.style.color;
       giochiTIT.style.color = curColour === 'red' ? 'black' : 'red';
       flexdiv1.classList.toggle("open")
-      aste.classList.toggle("open")
+      asta1Q.classList.toggle("open")
+      asta2Q.classList.toggle("open")
     })
 
     piattaformeTIT.addEventListener("click", () => {
@@ -336,6 +353,7 @@
       const curColour = piattaformeTIT.style.color;
       piattaformeTIT.style.color = curColour === 'red' ? 'grey' : 'red';
       piattaformeQ.classList.toggle("open")
+
     })
 
     esploraTIT.addEventListener("click", () => {
@@ -350,6 +368,8 @@
       const curColour = altroElementoTIT1.style.color;
       altroElementoTIT1.style.color = curColour === 'red' ? 'black' : 'red';
       flexdiv3.classList.toggle("open")
+      asta3Q.classList.toggle("open")
+      asta4Q.classList.toggle("open")
     })
 
     altroElementoTIT2.addEventListener("click", () => {
@@ -357,6 +377,8 @@
       const curColour = altroElementoTIT2.style.color;
       altroElementoTIT2.style.color = curColour === 'red' ? 'black' : 'red';
       flexdiv2.classList.toggle("open")
+      asta5Q.classList.toggle("open")
+      asta6Q.classList.toggle("open")
     })
 
     altroElementoTIT3.addEventListener("click", () => {
@@ -364,6 +386,8 @@
       const curColour = altroElementoTIT3.style.color;
       altroElementoTIT3.style.color = curColour === 'red' ? 'black' : 'red';
       flexdiv4.classList.toggle("open")
+      asta7Q.classList.toggle("open")
+      asta8Q.classList.toggle("open")
     })
 
     altroElementoTIT4.addEventListener("click", () => {
@@ -371,6 +395,8 @@
       const curColour = altroElementoTIT4.style.color;
       altroElementoTIT4.style.color = curColour === 'red' ? 'black' : 'red';
       flexdiv5.classList.toggle("open")
+      asta9Q.classList.toggle("open")
+      asta10Q.classList.toggle("open")
     })
 
     toggle.addEventListener("click", () => {

@@ -49,6 +49,7 @@
   top: 40px;
   bottom: 0;
   transition: 500ms;
+  z-index: 4;
 }
 
 .sidebar.close {
@@ -454,6 +455,7 @@
   width: 420px;
   border-radius: 5px;
   left: -150px;
+  z-index: 3;
 }
 
 
@@ -471,6 +473,8 @@
     transform: scale(1, 1);
   }
 }
+
+
 
 
 .prova p:hover {
@@ -535,6 +539,7 @@
   justify-content: center;
   border-radius: 5px;
   left: -150px;
+  z-index: 3;
 }
 
 .submenu2-subclass1>* {
@@ -566,6 +571,7 @@
   justify-content: center;
   border-radius: 5px;
   left: -150px;
+  z-index: 1;
 }
 
 .impegni:hover {
@@ -589,6 +595,7 @@
   justify-content: center;
   border-radius: 5px;
   left: -150px;
+  z-index: 1;
 }
 
 .submenu4-subclass1>* {
@@ -616,6 +623,7 @@
   justify-content: center;
   border-radius: 5px;
   left: -100px;
+  z-index: 1;
 }
 
 
@@ -625,11 +633,82 @@
 
 .section {
   display: flex;
-  background-image: url("./Files/jumbo.jpg");
+  background-image: url("./Files/jumbo1456w.jpg");
   background-repeat: no-repeat;
   width: 100%;
-  height: 560px;
+  height: 500px;
+  background-size: contain;
 }
+
+@media screen and (max-width: 1320px) {
+  .section {
+    background-image: url("./Files/jumbo1320w.jpg");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    background-image: url("./Files/jumbo1024w.jpg");
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section {
+    background-image: url("./Files/jumbo320w.jpg");
+  }
+}
+
+.jumbopng {
+  position: absolute;
+  top: 170px;
+  left: 210px;
+}
+
+
+.subtitle {
+  color: white;
+  font-size: 18px;
+  display: block;
+  width: 550px;
+
+}
+
+.buttondiv {
+  display: flex;
+  margin-top: 21px;
+  width: 100%;
+}
+
+.button {
+  padding: 12px 24px;
+  margin: 17px;
+  cursor: pointer;
+  position: relative;
+  left: -15px;
+  width: 30%;
+}
+
+.button:hover {
+  transform: scale(120%);
+  transition: 500ms;
+  position: relative;
+}
+
+#scopri {
+  border: solid 2px var(--global-color-white);
+  border-radius: 3px;
+  color: var(--global-color-white);
+  text-align: center;
+  cursor: pointer;
+}
+
+#preordina {
+  background-color: var(--global-color-white);
+  text-align: center;
+  border-radius: 3px;
+}
+
+
 
 .blackRectangle.black {
   background-color: #161616c5;
@@ -638,9 +717,44 @@
   position: absolute;
   top: 40px;
   transition: 400ms;
+  z-index: 4;
+}
+
+@media screen and (max-width: 960px) {
+  .button {
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .buttondiv {
+    flex-wrap: wrap;
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 1032px) {
+
+  .jumbopng {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    top: 20%;
+    left: 20%;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+
+  .buttondiv {
+    width: 100%;
+  }
+
+  /* .button{
+    width: 100%;
+  } */
+
   .giochi {
     display: none;
   }
@@ -701,6 +815,7 @@
     display: block;
     transition: 500ms;
     min-width: 355.04px;
+
   }
 
   .sidebarmenu>* {
@@ -752,7 +867,8 @@
 
   .piattaformeQ.open {
     color: var(--global-color-black);
-    border-bottom: none
+    border-bottom: none;
+
   }
 
   .giochiQ {
@@ -948,11 +1064,12 @@
     background-color: var(--global-color-red);
   }
 
-  .asta1Q.open{
+  .asta1Q.open {
     transform: rotate(135deg);
     background-color: var(--global-color-red);
   }
-  .asta2Q.open{
+
+  .asta2Q.open {
     transform: rotate(45deg);
     background-color: var(--global-color-red);
   }
@@ -994,7 +1111,7 @@
     height: 1px;
     transform: rotate(45deg)
   }
-  
+
   .asta2Q {
     background-color: var(--global-color-black);
     width: 8px;
@@ -1003,10 +1120,29 @@
     transform: rotate(-45deg)
   }
 
-  @media screen and (max-width: 768px){
-    .electronicArts{
+  @media screen and (max-width: 768px) {
+
+    .section {
+      background-image: url("./Files/jumbo768w.jpg");
+      background-size: cover;
+      height: 850px;
+    }
+
+    .electronicArts {
       width: 110px;
     }
+
+    .jumbopng {
+      position: absolute;
+      left: 40px;
+      top: 550px;
+      width: 60%;
+    }
+
+    .buttondiv{
+      width: 70%;
+    }
+
   }
 
 }
