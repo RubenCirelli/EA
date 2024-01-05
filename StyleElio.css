@@ -1132,17 +1132,203 @@
       width: 110px;
     }
 
-    .jumbopng {
+    /* .jumbopng {
       position: absolute;
       left: 40px;
       top: 550px;
       width: 60%;
+    } */
+
+    .jumbopng {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      left: 0;
+      /* position: absolute; */
+      top: 380px;
+      width: 60%;
+      margin-left: 3rem;
+      /* flex-shrink: 0; */
     }
 
-    .buttondiv{
+    .buttondiv {
       width: 70%;
+      display: flex;
     }
 
   }
 
+  @media screen and (max-width: 640px) {
+
+    .jumbopng {
+      display: flex;
+      flex-direction: column;
+      top: 300px;
+      align-items: center;
+      width: 80%;
+      text-align: center;
+    }
+
+    .jumbino{
+      width: 80%;
+    }
+
+    .buttondiv {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --global-color-purple: #551a8b;
+  --global-color-red: #ff4747;
+  --global-color-lightgrey: #f3f3f3;
+  --global-color-cyan: #6eb0d6;
+  --global-color-green: #07f468;
+  --global-color-grey: #eaeaea;
+  --global-color-white: #fff;
+  --global-color-black: #161616;
+  --global-font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
+    sans-serif;
+}
+.global-link {
+  font-size: 18px;
+  font-family: var(--global-font-family);
+  color: var(--global-color-black);
+  text-decoration: none;
+}
+
+.global-link:hover {
+  color: var(--global-color-red);
+}
+
+@media screen and (max-width: 1024px) {
+  .global-link {
+    font-size: 16px;
+  }
+}
+
+.global-button {
+  height: 60px;
+  width: 165px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: var(--global-font-family);
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.global-button:hover {
+  transform: scale(1.1); /* this will enlarge the button when hovered */
+}
+
+.global-button-round {
+  border: none;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1456) {
+  .global-button {
+    height: 51px;
+    width: 136px;
+  }
+}
+
+.global-news-card {
+  width: 33.33%;
+  height: 50%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  .global-news-card-img {
+    width: 100%;
+    height: 30%;
+    opacity: 1;
+  }
+
+  .global-news-card-content {
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    font-family: var(--global-font-family);
+    color: var(--global-color-black);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    .content-top-part {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      font-size: 14px;
+
+      .ea-logo-red {
+        color: var(--global-color-red);
+      }
+    }
+
+    .content-title {
+      margin-top: 6px;
+      font-size: 24px;
+    }
+
+    .content-body {
+      margin-top: 6px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.global-news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 1rem;
 }
