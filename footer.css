@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+    --global-color-purple: #551a8b;
+    --global-color-red: #ff4747;
+    --global-color-lightgrey: #f3f3f3;
+    --global-color-cyan: #6eb0d6;
+    --global-color-green: #07f468;
+    --global-color-grey: #eaeaea;
+    --global-color-white: #fff;
+    --global-color-black: #161616;
+    --global-font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
+      sans-serif;
+    --global-default-tab-font:16px;
+  }
+  @font-face {
+    font-family: EaFont;
+    src: url(./Files/ElectronicArtsText.ttf);
+  }
+
+  .info_footer{ 
+    
+    background-color: var(--global-color-lightgrey);
+    font-size: var(--global-default-tab-font);
+    a{
+      text-decoration: none;
+      margin-right: 3rem;
+    }
+    a:hover{
+      color: var(--global-color-red);
+    }
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    p a{
+      margin-right: 0;
+      color: var(--global-color-red);
+    }
+  }
