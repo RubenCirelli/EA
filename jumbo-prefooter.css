@@ -1,4 +1,6 @@
-.jumbo-prefooter-EA-PLAY-container{
+@import url("Style.css");
+
+.jumbo-prefooter-EA-PLAY-container {
   width: 100%;
   height: 500px;
   background-image: url(jumbo-img/background-EA-PLAY.jpg);
@@ -6,43 +8,83 @@
   display: flex;
   align-items: center;
 
-  .left-side{
-    width: 50%;
+  .left-side {
+    width: 60%;
     height: 100%;
     padding: 10% 10% 32px;
 
-    .content{
+    .content {
       color: var(--global-color-white);
       font-size: 18px;
       font-family: var(--global-font-family);
       margin-bottom: 20px;
     }
 
-    .global-button{
-      background-color: #0E0F43;
+    .global-button {
+      background-color: #0e0f43;
       color: var(--global-color-white);
       width: 180px;
     }
   }
 }
 
-.jumbo-prefooter-cyan-section{
+.jumbo-prefooter-cyan-section {
   height: 80px;
   width: 100%;
   background-color: var(--global-color-cyan);
-  padding: 0 20%;
+  padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  .copy{
+  .copy {
     color: var(--global-color-black);
     font-family: var(--global-font-family);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
   }
 
-  .global-button{
+  .global-button {
     background-color: var(--global-color-cyan);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .jumbo-prefooter-EA-PLAY-container {
+    .left-side {
+      .content {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .jumbo-prefooter-cyan-section {
+    height: 160px;
+    padding: 32px 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbo-prefooter-EA-PLAY-container {
+    height: 1100px;
+    background-image: url(jumbo-img/jumbo-media-query.jpg);
+
+    .left-side {
+      width: 100%;
+      height: 100%;
+      margin-top: 700px;
+
+      .content {
+        font-size: 16px;
+      }
+
+      .global-button {
+        font-size: 16px;
+      }
+    }
   }
 }
