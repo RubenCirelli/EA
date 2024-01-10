@@ -1,0 +1,1334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --global-color-purple: #551a8b;
+  --global-color-red: #ff4747;
+  --global-color-lightgrey: #f3f3f3;
+  --global-color-cyan: #6eb0d6;
+  --global-color-green: #07f468;
+  --global-color-grey: #eaeaea;
+  --global-color-white: #fff;
+  --global-color-black: #161616;
+  --global-color-darkgrey: #747474;
+}
+
+@font-face {
+  font-family: EaFont;
+  src: url(./Files/ElectronicArtsText.ttf);
+}
+
+
+.container-el {
+  font-family: EaFont;
+  width: 100%;
+  height: 100%;
+}
+
+.container-el.black {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.625);
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.sidebar {
+  background-color: var(--global-color-lightgrey);
+  height: 100%;
+  width: 28%;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0);
+  position: fixed;
+  overflow-y: scroll;
+  top: 40px;
+  bottom: 0;
+  transition: 500ms;
+  z-index: 4;
+}
+
+.sidebar.close {
+  transform: translateX(-100%);
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+}
+
+.tuttiIGiochi {
+  color: var(--global-color-darkgrey);
+  cursor: pointer;
+}
+
+.closeit {
+  cursor: pointer;
+}
+
+.closeit:hover {
+  color: var(--global-color-red);
+}
+
+.tuttiIGiochi:hover {
+  color: var(--global-color-red);
+}
+
+.bigCard {
+  background-color: #07f468;
+  height: 350px;
+  width: 80%;
+  margin: 2.6rem;
+  cursor: pointer;
+  background-image: url("./Files/BigCard.png");
+  background-size: 350px 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bigCard:hover img {
+  width: 130px;
+  height: 130px;
+  transition: 300ms;
+}
+
+.EALogoBig {
+  width: 100px;
+  height: 100px;
+}
+
+.smallcardContainer {
+  display: flex;
+  margin: 2rem;
+}
+
+
+.smallLogo {
+  width: 60px;
+  height: 60px;
+}
+
+
+.smallcard1 {
+  background-color: #07f468;
+  height: 170px;
+  width: 170px;
+  background-image: url("./Files/smallcard1.jpg");
+  background-size: 170px 170px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallcard1:hover img {
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+}
+
+.smallcard2 {
+  background-color: #07f468;
+  height: 170px;
+  width: 170px;
+  background-image: url("./Files/smallcard2.png");
+  background-size: 170px 170px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallcard2:hover img {
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+}
+
+.smallcard3 {
+  background-color: #07f468;
+  height: 170px;
+  width: 170px;
+  background-image: url("./Files/smallcard3.jpg");
+  background-size: 170px 170px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallcard3:hover img {
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+}
+
+.smallcard4 {
+  background-color: #07f468;
+  height: 170px;
+  width: 170px;
+  background-image: url("./Files/smallcard4.jpg");
+  background-size: 170px 170px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallcard4:hover img {
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+}
+
+.smallcard5 {
+  background-color: #07f468;
+  height: 170px;
+  width: 170px;
+  background-image: url("./Files/smallcard5.jpg");
+  background-size: 170px 170px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallcard5:hover img {
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+}
+
+.smallcard6 {
+  background-color: #07f468;
+  height: 170px;
+  width: 170px;
+  background-image: url("./Files/smallcard6.jpg");
+  background-size: 170px 170px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallcard6:hover img {
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+}
+
+
+.blackNavbar {
+  background-color: #161616;
+  width: 100%;
+  height: 40px;
+  color: var(--global-color-grey);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile {
+  margin-right: 40px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.answer {
+  margin-right: 40px;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.ea {
+  margin-right: 30px;
+  margin-top: 6px;
+  height: 23px;
+  width: 40px;
+  cursor: pointer;
+
+}
+
+.submenu1 {
+  display: none;
+}
+
+.submenu2 {
+  display: none;
+}
+
+.submenu3 {
+  display: none;
+}
+
+.submenu4 {
+  display: none;
+}
+
+.submenu5 {
+  display: none;
+}
+
+.realNavbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--global-color-white);
+  align-items: center;
+  color: #161616;
+}
+
+.HamburgerMenu {
+  background-color: var(--global-color-black);
+  width: 4px;
+  height: 4px;
+  margin: 4px;
+  border-radius: 4px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sidebarmenu {
+  display: none;
+}
+
+.menuQuery {
+  display: none;
+}
+
+.menu:hover>* {
+  background-color: var(--global-color-red);
+  width: 6px;
+  height: 6px;
+  margin: 5px;
+  border-radius: 6px;
+  margin-left: 20px;
+  transition: 400ms;
+}
+
+.electronicArts {
+  margin-left: 30px;
+  width: 200px;
+  cursor: pointer;
+}
+
+
+.giochi {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aste {
+  display: flex;
+  margin-left: 3px;
+}
+
+.asta1 {
+  background-color: var(--global-color-black);
+  width: 8px;
+  height: 1px;
+  transform: rotate(45deg)
+}
+
+.asta2 {
+  background-color: var(--global-color-black);
+  width: 8px;
+  height: 1px;
+  margin-left: -3px;
+  transform: rotate(-45deg)
+}
+
+
+.altreEsperienze {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.informazioni {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.impegni {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.risorse {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.giochi:hover {
+  color: var(--global-color-red);
+}
+
+.giochi:hover .asta1 {
+  transform: rotate(135deg);
+  background-color: var(--global-color-red);
+}
+
+.altreEsperienze:hover .asta1 {
+  transform: rotate(135deg);
+  background-color: var(--global-color-red);
+}
+
+.altreEsperienze:hover .asta2 {
+  transform: rotate(45deg);
+  background-color: var(--global-color-red);
+}
+
+
+.informazioni:hover .asta2 {
+  transform: rotate(45deg);
+  background-color: var(--global-color-red);
+}
+
+.informazioni:hover .asta1 {
+  transform: rotate(135deg);
+  background-color: var(--global-color-red);
+}
+
+.impegni:hover .asta2 {
+  transform: rotate(45deg);
+  background-color: var(--global-color-red);
+}
+
+.impegni:hover .asta1 {
+  transform: rotate(135deg);
+  background-color: var(--global-color-red);
+}
+
+.risorse:hover .asta2 {
+  transform: rotate(45deg);
+  background-color: var(--global-color-red);
+}
+
+.risorse:hover .asta1 {
+  transform: rotate(135deg);
+  background-color: var(--global-color-red);
+}
+
+.giochi:hover .asta2 {
+  transform: rotate(45deg);
+  background-color: var(--global-color-red);
+}
+
+.giochi:hover .submenu1 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
+  position: absolute;
+  background-color: #eaeaeaef;
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 50px;
+  padding: 2rem;
+  height: 370px;
+  width: 420px;
+  border-radius: 5px;
+  left: -150px;
+  z-index: 3;
+}
+
+
+.submenu1-subclass>* {
+  margin: 0.7rem;
+}
+
+@keyframes dropDown {
+  from {
+    transform: scale(1, 0);
+
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+.prova p:hover {
+  color: var(--global-color-red);
+}
+
+.giochi:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.altreEsperienze:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.informazioni:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.impegni:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+.risorse:hover .prova {
+  width: 1px;
+  height: 300px;
+  position: relative;
+  top: 140px;
+}
+
+
+
+
+.altreEsperienze:hover {
+  color: var(--global-color-red);
+}
+
+.altreEsperienze:hover .submenu2 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
+  position: absolute;
+  background-color: #eaeaeaef;
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 50px;
+  padding: 2rem;
+  height: 200px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  left: -150px;
+  z-index: 3;
+}
+
+.submenu2-subclass1>* {
+  margin: 0.7rem
+}
+
+.informazioni:hover {
+  color: var(--global-color-red);
+}
+
+
+.submenu3-subclass1>* {
+  margin: 0.7rem
+}
+
+.informazioni:hover .submenu3 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
+  position: absolute;
+  background-color: #eaeaeaef;
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 50px;
+  padding: 2rem;
+  height: 250px;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  left: -150px;
+  z-index: 1;
+}
+
+.impegni:hover {
+  color: var(--global-color-red);
+}
+
+
+.impegni:hover .submenu4 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
+  position: absolute;
+  background-color: #eaeaeaef;
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 50px;
+  padding: 2rem;
+  height: 230px;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  left: -150px;
+  z-index: 1;
+}
+
+.submenu4-subclass1>* {
+  margin: 0.7rem;
+}
+
+.risorse:hover {
+  color: var(--global-color-red);
+}
+
+
+.risorse:hover .submenu5 {
+  transform-origin: top;
+  animation-duration: 0.3s;
+  animation-name: dropDown;
+  position: absolute;
+  background-color: #eaeaeaef;
+  display: flex;
+  color: var(--global-color-black);
+  margin-top: 50px;
+  padding: 2rem;
+  height: 230px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  left: -100px;
+  z-index: 1;
+}
+
+
+.submenu5-subclass1>* {
+  margin: 0.7rem
+}
+
+.section {
+  display: flex;
+  background-image: url("./Files/jumbo1456w.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1320px) {
+  .section {
+    background-image: url("./Files/jumbo1320w.jpg");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    background-image: url("./Files/jumbo1024w.jpg");
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section {
+    background-image: url("./Files/jumbo320w.jpg");
+  }
+}
+
+.jumbopng {
+  position: absolute;
+  top: 170px;
+  left: 210px;
+}
+
+
+.subtitle {
+  color: white;
+  font-size: 18px;
+  display: block;
+  width: 550px;
+
+}
+
+.buttondiv {
+  display: flex;
+  margin-top: 21px;
+  width: 100%;
+}
+
+.button {
+  padding: 12px 24px;
+  margin: 17px;
+  cursor: pointer;
+  position: relative;
+  left: -15px;
+  width: 30%;
+}
+
+.button:hover {
+  transform: scale(120%);
+  transition: 500ms;
+  position: relative;
+}
+
+#scopri {
+  border: solid 2px var(--global-color-white);
+  border-radius: 3px;
+  color: var(--global-color-white);
+  text-align: center;
+  cursor: pointer;
+}
+
+#preordina {
+  background-color: var(--global-color-white);
+  text-align: center;
+  border-radius: 3px;
+}
+
+
+
+.blackRectangle.black {
+  background-color: #161616c5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  transition: 400ms;
+  z-index: 4;
+}
+
+@media screen and (max-width: 960px) {
+  .button {
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .buttondiv {
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1032px) {
+
+  .jumbopng {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    top: 20%;
+    left: 20%;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+
+  .buttondiv {
+    width: 100%;
+  }
+
+  /* .button{
+    width: 100%;
+  } */
+
+  .giochi {
+    display: none;
+  }
+
+  .altreEsperienze {
+    display: none;
+  }
+
+  .informazioni {
+    display: none;
+  }
+
+  .impegni {
+    display: none;
+  }
+
+  .risorse {
+    display: none;
+  }
+
+  .aste {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menuQuery {
+    display: block;
+    cursor: pointer;
+  }
+
+  .HamburgerMenuQuery {
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--global-color-black);
+    margin-left: 10px;
+  }
+
+  .menuQuery:hover>* {
+    background-color: var(--global-color-red);
+  }
+
+  .electronicArts {
+    margin-left: 7px;
+  }
+
+  .sidebarmenu {
+    background-color: var(--global-color-lightgrey);
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    top: 40px;
+    transform: translateX(0);
+    overflow-y: scroll;
+    display: block;
+    transition: 500ms;
+    min-width: 355.04px;
+
+  }
+
+  .sidebarmenu>* {
+    margin-left: .7rem;
+  }
+
+  .sidebarmenu.close {
+    transform: translateX(-100%);
+  }
+
+  .sidebarmenu p {
+    cursor: pointer;
+    border-bottom: solid 1px var(--global-color-darkgrey);
+    padding: 1rem;
+  }
+
+  .sidebarmenu p:last-child {
+    cursor: pointer;
+    border-bottom: none;
+    padding: 1rem;
+  }
+
+  .esploraQ {
+    display: none;
+  }
+
+  .esploraQ.close {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    border-bottom: solid 1px var(--global-color-red);
+    transition: 500ms;
+  }
+
+  .esploraQ.open {
+    color: var(--global-color-black);
+    border-bottom: solid 1px var(--global-color-black)
+  }
+
+  .esploraQ.open p:last-child {
+    color: var(--global-color-black);
+    border-bottom: none
+  }
+
+  .esploraQ.open p:last-child:hover {
+    color: var(--global-color-red);
+  }
+
+  .piattaformeQ.open {
+    color: var(--global-color-black);
+    border-bottom: none;
+
+  }
+
+  .giochiQ {
+    display: none;
+  }
+
+  .giochiQ.close {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    color: var(--global-color-darkgrey);
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
+  }
+
+  .giochiTIT.open {
+    border-bottom: none;
+  }
+
+  .giochiTIT:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .esploraTIT:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .piattaformeTIT:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT1:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT2:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT3:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .altroElementoTIT4:hover {
+    color: var(--global-color-red);
+    cursor: pointer;
+  }
+
+  .piattaformeQ {
+    display: none;
+  }
+
+  .piattaformeQ.close {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    border-top: solid 1px var(--global-color-red);
+  }
+
+  .altroElemento1.close {
+
+    display: none;
+  }
+
+  .altroElemento1 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .altroElemento1 p {
+    color: var(--global-color-darkgrey);
+  }
+
+  .altroElemento2 p {
+    color: var(--global-color-darkgrey);
+  }
+
+  .altroElemento3 p {
+    color: var(--global-color-darkgrey);
+  }
+
+  .altroElemento4 p {
+    color: var(--global-color-darkgrey);
+  }
+
+  .altroElemento2.close {
+
+    display: none;
+  }
+
+  .altroElemento2 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
+  }
+
+  .altroElemento2.close {
+    display: none;
+  }
+
+  .altroElemento3 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
+  }
+
+  .altroElemento3.close {
+    display: none;
+  }
+
+  .altroElemento4 {
+    transform-origin: top;
+    animation-duration: 0.5s;
+    animation-name: dropDown;
+    display: block;
+    border-top: solid 1px var(--global-color-red);
+    border-bottom: solid 1px var(--global-color-red);
+  }
+
+  .altroElemento4.close {
+    display: none;
+  }
+
+  .sidebarmenu p:hover {
+    color: var(--global-color-red);
+  }
+
+  .flexdiv {
+    display: flex;
+    border-bottom: var(--global-color-black) solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .flexdiv.open {
+    border-bottom: none;
+  }
+
+  .flexdiv:hover {
+    color: var(--global-color-red);
+  }
+
+  .closesidebar {
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .closesidebar:hover {
+    color: var(--global-color-red);
+  }
+
+  .asteQ {
+    display: flex;
+    margin-right: 1rem;
+    position: relative;
+    margin-top: .7rem;
+  }
+
+  .sidebarheaderQ {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexdiv:hover .asta1Q {
+    transform: rotate(135deg);
+    background-color: var(--global-color-red);
+  }
+
+  .flexdiv:hover .asta2Q {
+    transform: rotate(45deg);
+    background-color: var(--global-color-red);
+  }
+
+  .asta1Q.open {
+    transform: rotate(135deg);
+    background-color: var(--global-color-red);
+  }
+
+  .asta2Q.open {
+    transform: rotate(45deg);
+    background-color: var(--global-color-red);
+  }
+
+  .sidebarheaderQ {
+    background-color: var(--global-color-grey);
+    margin: 0px;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .flexdivGrey {
+    display: flex;
+    border-bottom: var(--global-color-darkgrey) solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #flexdivGrey2 {
+    border-bottom: none;
+  }
+
+  .flexdiv:last-child {
+    border-bottom: none;
+  }
+
+  .flexdivGrey.open {
+    border-bottom: none
+  }
+
+  .flexdivGrey:hover {
+    color: var(--global-color-red);
+  }
+
+  .asta1Q {
+    background-color: var(--global-color-black);
+    width: 8px;
+    height: 1px;
+    transform: rotate(45deg)
+  }
+
+  .asta2Q {
+    background-color: var(--global-color-black);
+    width: 8px;
+    height: 1px;
+    margin-left: -3px;
+    transform: rotate(-45deg)
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .section {
+      background-image: url("./Files/jumbo768w.jpg");
+      background-size: cover;
+      height: 850px;
+    }
+
+    .electronicArts {
+      width: 110px;
+    }
+
+    /* .jumbopng {
+      position: absolute;
+      left: 40px;
+      top: 550px;
+      width: 60%;
+    } */
+
+    .jumbopng {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      left: 0;
+      /* position: absolute; */
+      top: 380px;
+      width: 60%;
+      margin-left: 3rem;
+      /* flex-shrink: 0; */
+    }
+
+    .buttondiv {
+      width: 70%;
+      display: flex;
+    }
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .jumbopng {
+      display: flex;
+      flex-direction: column;
+      top: 300px;
+      align-items: center;
+      width: 80%;
+      text-align: center;
+    }
+
+    .jumbino{
+      width: 80%;
+    }
+
+    .buttondiv {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --global-color-purple: #551a8b;
+  --global-color-red: #ff4747;
+  --global-color-lightgrey: #f3f3f3;
+  --global-color-cyan: #6eb0d6;
+  --global-color-green: #07f468;
+  --global-color-grey: #eaeaea;
+  --global-color-white: #fff;
+  --global-color-black: #161616;
+  --global-font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
+    sans-serif;
+}
+.global-link {
+  font-size: 18px;
+  font-family: var(--global-font-family);
+  color: var(--global-color-black);
+  text-decoration: none;
+}
+
+.global-link:hover {
+  color: var(--global-color-red);
+}
+
+@media screen and (max-width: 1024px) {
+  .global-link {
+    font-size: 16px;
+  }
+}
+
+.global-button {
+  height: 60px;
+  width: 165px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: var(--global-font-family);
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.global-button:hover {
+  transform: scale(1.1); /* this will enlarge the button when hovered */
+}
+
+.global-button-round {
+  border: none;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1456) {
+  .global-button {
+    height: 51px;
+    width: 136px;
+  }
+}
+
+.global-news-card {
+  width: 33.33%;
+  height: 50%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  .global-news-card-img {
+    width: 100%;
+    height: 30%;
+    opacity: 1;
+  }
+
+  .global-news-card-content {
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    font-family: var(--global-font-family);
+    color: var(--global-color-black);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    .content-top-part {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      font-size: 14px;
+
+      .ea-logo-red {
+        color: var(--global-color-red);
+      }
+    }
+
+    .content-title {
+      margin-top: 6px;
+      font-size: 24px;
+    }
+
+    .content-body {
+      margin-top: 6px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.global-news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 1rem;
+}
