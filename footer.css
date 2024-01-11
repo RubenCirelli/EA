@@ -48,6 +48,7 @@
     .social{
 
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       img{
         height: 16px;
@@ -62,20 +63,40 @@
 
   .lastFooter{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     ul {
       display: grid;
-      grid-template-columns: auto auto auto auto;
-      gap: 1rem;
+      grid-template-columns: auto auto auto;
+      gap: 5px;
       list-style-type: none;
       }
     
-    ul li {
+    li a {
+      text-decoration: none;
       padding: 5px;
       margin-right: 20px;
       
     }
     
   }
-  
+  .select{
+    border: 1px solid lightgray;
+    padding: 10px; 
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+
+    select{
+      border: none;
+    }
+  }
+  .select:hover{
+    padding: 15px;
+  }
+  .lastText{
+    display: flex;
+    flex-direction: column;
+    margin:3px
+  }
