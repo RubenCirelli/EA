@@ -1,15 +1,3 @@
-:root {
-    --global-color-purple: #551a8b;
-    --global-color-red: #ff4747;
-    --global-color-lightgrey: #f3f3f3;
-    --global-color-cyan: #6eb0d6;
-    --global-color-green: #07f468;
-    --global-color-grey: #eaeaea;
-    --global-color-white: #fff;
-    --global-color-black: #161616;
-    --global-font-family: "ElectronicArtsDisplay", "Verdana", "Helvetica", "Arial",
-      sans-serif;
-  }
 .card_container {
     display: flex;
     justify-content: center;
@@ -50,6 +38,7 @@
     background: linear-gradient(to right, var(--global-color-purple), var(--global-color-red));
     .background-card img{
         opacity: 0.1;
+
     }
     .card-description {
         top: -60%;
